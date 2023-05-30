@@ -10,7 +10,6 @@ $calculator = new RoiCalculator();
 $errors = $calculator->validateFormData($_POST);
 
 if (empty($errors)) {
-    // No errors proceed with calculations;
     $response = $calculator->calculate($_POST);
     $_SESSION['response'] = $response;
 

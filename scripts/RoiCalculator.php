@@ -76,9 +76,6 @@ class RoiCalculator
         $roi['existing_annual_sales'] = round(($formData['our_fees'] / $formData['average_sales']) * 100, 2);
         $roi['growth_annual_sales'] = round(($formData['our_fees'] / $scale['sale_increase_year']) * 100, 2);
         
-        // echo "<pre>";
-        // print_r();
-        // echo "</pre>";
         return [
             "inventory" => $inventory,
             "staff" => $staff,
