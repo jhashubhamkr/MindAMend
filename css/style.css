@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+section{
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 5%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+table{
+    border-collapse: collapse;
+    width: 700px;
+}
+table th,
+table td{
+    border: 1px solid #000;
+}
+table th{
+    padding: 12px;
+}
+table tbody th{
+    text-align: right;
+    width: 300px;
+    font-weight: 500;
+}
+section.report table{
+    width: 400px;
+}
+section.report table tbody th {
+    width: 250px;
+}
+section.report table tbody td {
+    padding-left: 10px;
+}
+table thead th{
+    background-color: antiquewhite;
+}
+table input{
+    height: 44px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    padding: 8px;
+    outline: none;
+    transition: all 0.25s ease-in-out;
+}
+table input:focus{
+    background-color: aliceblue;
+}
+table input.error {
+    background-color: rgb(244, 222, 227);
+}
+table div.error{
+    font-size: 14px;
+    color: red;
+    padding: 6px;
+}
+table button{
+    width: 96%;
+    font-size: 16px;
+    padding: 10px 14px;
+    margin: 8px 2%;
+    cursor: pointer;
+}
+div.submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button[type="submit"]{
+    padding: 10px 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    table tbody th{
+        width: 50%;
+    }
+    section.report table tbody th{
+        width: 50%;
+    }
+}
